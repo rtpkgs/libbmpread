@@ -1,0 +1,2 @@
+* Handle RLE compressed bitmaps
+* More automated tests (perhaps using http://bmptestsuite.sourceforge.net/)

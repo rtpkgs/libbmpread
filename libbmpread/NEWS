@@ -1,0 +1,36 @@
+3.0 (2018 Feb. 02)
+------------------
+
+* Support for 16- and 32-bit bitmaps.
+* Alpha channel support (available in 16- and 32-bit bitmap files).
+
+2.1 (2016 Jul. 18)
+------------------
+
+* Added basic unit test suite.
+* Even less undefined and implementation-defined behavior.  I believe that
+  libbmpread will properly fail with error on maliciously crafted files that
+  could before have led to buffer overruns or other undesirable outcomes.
+* Some internal functions have been renamed or shuffled around.
+
+2.0 (2016 Apr. 24)
+------------------
+
+* Less undefined and implementation-defined behavior, so libbmpread should work
+  in more exotic environments.  I believe the only two requirements for the
+  runtime environment now are that CHAR_BIT == 8 and integers are stored in
+  two's complement, both of which are hard to avoid.
+* To that end, the flags have been changed to unsigned ints (they were ints).
+  This may require some code changes in consumers of this API.
+* Some formatting, wording, and packaging tweaks.
+
+1.1 (2005 Mar. 15)
+------------------
+
+* Added byte-swapping code for big-endian machines (libbmpread will now work on
+  Macs!).  Thanks to Micah Tomblin for testing this for me.
+
+1.0 (2005 Mar. 14)
+------------------
+
+* Initial version.

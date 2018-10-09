@@ -1,0 +1,4 @@
+libbmpread isn't set up to be built into a shared library.  I recommend simply
+copying bmpread.c and .h into your project and adding them to your build.
+Alternately, I suppose you could build a library out of them if you want to,
+but I'll leave that trivial exercise up to you.
